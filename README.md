@@ -1,18 +1,14 @@
-# STM32F1 ROS Subscriber
+# IC382_ROS_STM32_AutonomousToolCart
 
-## New Features and Remarks
-This repository is tested and developed using Nucleo 64 STM32F103ZET6. You should refer to branch stm32-f103rb for further instructions.
+## Objective
+Perform a mobile platform with a top module that would be able to perform certain missions, such as follow me, remote navigation, autonomous tasks execution etc.
 
-1. You may need to use the following to enable the communication and the ros parameter in launch file as well. (ttyACM0 is replaced by ttyUSB0)
-```
-sudo chmod 777 /dev/ttyUSB0
-```
+## Designs
+![image](https://user-images.githubusercontent.com/56528924/181037464-60932575-9c98-4993-bfe7-cd93b12a9df0.png)
+![image](https://user-images.githubusercontent.com/56528924/181037491-b60d997a-f1b8-4f44-9a4c-3fd0d679f927.png)
 
-2. The VCP of STM32 is ready thus you may have another communication channel to debug your program.
+## Implementation
+The team is separated into mechanical and electronic parts to implement the project. Mechanical part is required to fabricate the kart frame which is able to load and move around smoothly. Electronic part needs to design the program which is used to control the motors. And this record is based on the electronic part, and focusing on STM and ROS programming. (details in report)
 
-3. IWDG was initialized with 13.2 second limited.
-
-4. Large power motor drive is used instead of TB6612FNG.
-
-## Hardware
-![image](https://github.com/vincent51689453/IC382-ROS-STM32/blob/stm32-f103ze/STM32Board.jpg)
+## Result
+![image](https://user-images.githubusercontent.com/56528924/181038604-a48077f9-12d8-4f59-9785-0eabd42e15be.png)
